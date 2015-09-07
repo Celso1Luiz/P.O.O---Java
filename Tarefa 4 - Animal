@@ -1,0 +1,21 @@
+package Tarefa4;
+
+public class Animal 
+{
+	public String raca;
+	public int idade;
+	public double peso;
+	
+	public String fazerBarulho()
+	{
+		return "O barulho do " + raca ;
+	}
+	
+	public Animal(String raca, int idade, double peso) 
+	{
+		super();
+		this.raca = raca;
+		this.idade = idade;
+		this.peso = peso;
+	}
+}
