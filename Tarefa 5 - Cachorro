@@ -1,0 +1,20 @@
+package Tarefa5;
+
+import Tarefa4.Animal;
+
+public class Cachorro extends Animal
+{
+
+	public Cachorro(String raca, int idade, double peso) 
+	{
+		super(raca, idade, peso);
+	}
+	
+	@Override
+	public String fazerBarulho()
+	{
+		String msg = super.fazerBarulho();
+		return msg + ", que é um cachorro é : <AUAU>";
+		
+	}
+}
