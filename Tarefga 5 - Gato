@@ -1,0 +1,20 @@
+package Tarefa5;
+
+import Tarefa4.Animal;
+
+public class Gato extends Animal
+{
+
+	public Gato(String raca, int idade, double peso) 
+	{
+		super(raca, idade, peso);
+	}
+	
+	@Override
+	public String fazerBarulho()
+	{
+		String msg = super.fazerBarulho();
+		return msg + ", que é um gato é : <MIAU>";
+		
+	}
+}
