@@ -1,0 +1,17 @@
+package Tarefa6;
+
+import Tarefa4.Animal;
+
+public class ManadaSustenido extends Manada 
+{
+	String respectiva = "";
+	@Override
+	public String estourar() 
+	{
+		for(Animal a : animais)
+		{
+			respectiva += a.fazerBarulho() + "#";
+		}
+		return respectiva;
+	}
+}
