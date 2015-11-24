@@ -13,4 +13,14 @@ public abstract class Manada
 	{
 		animais.add(animal);
 	}
+	
+	public List<Animal> getAnimais()
+	{
+		return animais;
+	}
+	
+	public void setAnimais(List<Animal>animais2)
+	{
+		this.animais = animais2;
+	}	
 }
