@@ -1,0 +1,27 @@
+package anagrama;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Anagrama 
+{
+	public static boolean saoAnagramas (String a, String b){
+		a=a.toLowerCase();
+		b=b.toLowerCase();
+		
+		
+  	List<Character>lista1= new ArrayList<Character>();
+  	List<Character>lista2= new ArrayList<Character>();
+  
+  	for (char c: a.replace(" ", "").toCharArray())
+  	{
+  		lista1.add(c);
+  	}
+  
+  	for (char c: b.replace(" ", "").toCharArray())
+  	{
+  		lista2.add(c);
+  	}
+  	return lista1.containsAll(lista2) && lista1.size()==lista2.size();
+  	}
+}
