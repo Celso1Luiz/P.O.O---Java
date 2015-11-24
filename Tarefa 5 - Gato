@@ -5,9 +5,9 @@ import Tarefa4.Animal;
 public class Gato extends Animal
 {
 
-	public Gato(String raca, int idade, double peso) 
+	public Gato(String raca, String nome, int idade, double peso) 
 	{
-		super(raca, idade, peso);
+		super(raca, nomr, idade, peso);
 	}
 	
 	@Override
