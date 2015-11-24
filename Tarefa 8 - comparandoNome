@@ -1,0 +1,8 @@
+import Tarefa4.Animal;
+public class ComparandoPorNome implements Comparator<Animal> 
+{
+	@Override
+	public int compare(Animal anim, Animal compOutro){
+		return anim.getNome().compareTo(compOutro.getNome());
+	}
+}
